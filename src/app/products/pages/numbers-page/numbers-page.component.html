@@ -1,0 +1,27 @@
+<p-panel header="Pipes numericos" class="p-1">
+
+  <p>
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa esse modi ea, ex quisquam temporibus. Nostrum
+    sapiente eos fuga reiciendis soluta autem asperiores rem ea quae unde officiis, exercitationem veniam!
+  </p>
+</p-panel>
+
+<div class="grid " >
+  <div class="col-12 md:col-4">
+    <p-card header="ventas netas" subheader="del presente año">
+        {{totalSells + 1234| number:'1.1-2'}}
+   </p-card>
+  </div>
+   <div class="col-12 md:col-4">
+    <p-card header="ventas brutas" subheader="del presente año">
+        {{totalSells| currency: '':'symbol-narrow':'1.4-4'}}
+   </p-card>
+
+   </div>
+   <div class="col-12 md:col-4">
+    <p-card header="ganancias" subheader="del presente año">
+        {{percent| percent:'1.2-2'}}
+   </p-card>
+
+   </div>
+</div>
